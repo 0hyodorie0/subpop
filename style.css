@@ -1,0 +1,408 @@
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background: black;
+    min-width: 1300px;
+}
+
+.first-page {
+    background-image: url(https://s15.postimg.cc/h7crboqkb/background.png);
+    background-repeat: no-repeat;
+    background-position: center -10px;
+    background-size: 1920px;
+    height: 770px;
+    margin: 0 auto;
+}
+
+.con {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top-bar {
+    position: relative;
+}
+
+.top-bar a {
+    display: block;
+}
+
+.top-bar>ul>li:hover>ul {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.top-bar>ul>li>ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 28px 28px;
+    margin: 0 2px;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+
+.logo {
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -50px;
+}
+
+.logo img {
+    width: 8%;
+}
+
+.top-bar>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.top-bar>ul {
+    position: absolute;
+    left: 156px;
+    top: -20px;
+    margin: 0;
+}
+
+.top-bar>ul>li {
+    position: relative;
+    float: left;
+    width: 160px;
+    height: 50px;
+}
+
+.top-bar>ul>li>a {
+    text-align: center;
+    font-size: 18px;
+    color: #232323;
+    display: block;
+}
+
+.top-bar ul li {
+    color: gray;
+}
+
+.top-bar ul ul li:hover>a {
+    font-weight: bold;
+    color: #232323;
+    text-decoration: underline wavy;
+    transition: color 0.8s;
+}
+
+.top-bar>ul ul>li {
+    padding: 2px 5px;
+}
+
+.top-bar ul ul ul li {
+    float: left;
+    font-size: 15px;
+}
+
+.top-bar ul ul ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.top-bar>ul>li:nth-child(1)>ul {
+    height: 150px;
+    width: 150px;
+}
+
+.top-bar>ul>li:nth-child(2)>ul {
+    height: 140px;
+}
+
+.top-bar>ul>li:nth-child(1) {
+    top: 286px;
+    left: -84px;
+}
+
+.top-bar>ul>li:nth-child(1)>a {
+    transform: rotate(-24deg);
+}
+
+.top-bar>ul>li:nth-child(2) {
+    top: 258px;
+    left: -80px;
+}
+
+.top-bar>ul>li:nth-child(3) {
+    top: 246px;
+    left: -88px;
+}
+
+.top-bar>ul>li:nth-child(3)>ul {
+    width: 120px;
+}
+
+.top-bar>ul>li:nth-child(3)>a {
+    transform: rotate(-12deg);
+}
+
+.top-bar>ul>li:nth-child(4) {
+    top: 210px;
+    left: -110px;
+}
+
+.top-bar>ul>li:nth-child(4)>a {
+    transform: rotate(-14deg);
+}
+
+.top-bar>ul>li:nth-child(4)>ul {
+    width: 140px;
+}
+
+.top-bar>ul>li:nth-child(5) {
+    top: 174px;
+    left: -120px;
+}
+
+.top-bar>ul>li:nth-child(5)>a {
+    transform: rotate(-14deg);
+}
+
+.top-list ul {
+    float: right;
+    margin-top: 330px;
+    margin-right: -36px;
+}
+
+.top-list ul li {
+    display: inline-block;
+    font-size: 11px;
+    color: lightgray;
+    margin-right: 28px;
+}
+
+.subs {
+    position: absolute;
+    top: 350px;
+    right: -10px;
+    color: gray;
+    text-align: right;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.subs input {
+    font-size: 15px;
+    box-sizing: border-box;
+    background: black;
+    color: white;
+    border: none;
+    position: relative;
+    top: -6px;
+    margin-right: -6px;
+    width: 200px;
+    border: 1.5px groove white;
+    padding: 8px;
+    background-image: url(https://s2.postimg.org/cn17lxet5/subs-button.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 220px;
+    transition: width 0.4s ease-in-out;
+}
+
+.subs input:focus {
+    width: 96%;
+}
+
+.subs section {
+    width: 340px;
+}
+
+.ask {
+    position: absolute;
+    top: 128px;
+    width: 160px;
+    left: 900px;
+}
+
+.ask input {
+    width: 50px;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    background: rgba(0, 0, 0, 0.35);
+    padding-left: 25px;
+    color: white;
+    transition: width 0.4s ease-in-out;
+    position: relative;
+}
+
+.ask input:focus {
+    width: 100%;
+}
+
+.ask>a>.fa {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: black;
+}
+
+div.content1 {
+    position: relative;
+    top: -76px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row1 {
+    margin-left: -36px;
+    margin-bottom: 30px;
+}
+
+.row1>div {
+    height: 250px;
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.row1::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row1>div img {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+    transition: .2s ease-in-out;
+}
+
+@keyframes spaceboots {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(1px, 2px) rotate(5deg);
+    }
+
+    20% {
+        transform: translate(-2px, 3px) rotate(-1deg);
+    }
+
+    30% {
+        transform: translate(3px, 0px) rotate(2deg);
+    }
+
+    40% {
+        transform: translate(10px, 0px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(-4px, 4px) rotate(-4deg);
+    }
+
+    60% {
+        transform: translate(0px, 7px) rotate(6deg);
+    }
+}
+
+.row1>div img:hover,
+div img:focus {
+    transform: scale(1.2);
+    animation-name: spaceboots;
+    animation-duration: 0.8s;
+    transform-origin: 30% 30%;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.content2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+}
+
+.row2>div {
+    float: left;
+    padding-left: 30px;
+    padding-right: 24px;
+}
+
+.row2::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row2 {
+    margin-left: -14px;
+    margin-right: -30px;
+    margin-bottom: 100px;
+}
+
+.row2>div>h3 {
+    color: gray;
+}
+
+.row2>div>ul>li {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: gray;
+    padding: 8px 0;
+}
+
+.row2>div>h3>a:hover {
+    color: white;
+    transition: color 0.5s;
+}
+
+.row2>div>ul>li:hover>a {
+    color: white;
+    transition: color 0.8s;
+}
+
+footer {
+    margin-top: 200px;
+    top: 100%;
+    padding: 10px;
+    height: 30px;
+    color: gray;
+}
+
+footer>.sns {
+    padding-right: 12px;
+    padding-top: 5px;
+    float: right;
+}
+
+footer>.sns>div {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+footer>.sns>div:hover>a {
+    color: white;
+    transition: 0.5s;
+}
